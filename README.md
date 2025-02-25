@@ -3,5 +3,5 @@ Gerenciador de tarefas com esteticas do jogo Elden Ring
 
 React + vite
 express
-node
+node.js
 mysql
