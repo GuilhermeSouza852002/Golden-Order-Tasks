@@ -1,8 +1,16 @@
+import { Outlet } from "react-router-dom";
+
+import Navbar from "../../components/navbar.tsx"
+
 function Home() {
 
   return (
-    <h1>Praise The Sun</h1>
-  )
+    <div className="Home">
+    <Navbar />
+    <h1>Home</h1>
+    <Outlet />    {/*Utilizado para reutilizar estruturas das rotas em outras paginas*/}
+    </div>
+  );
 }
 
 export default Home
