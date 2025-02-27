@@ -3,12 +3,15 @@ import { createRoot } from 'react-dom/client'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Paginas
+// Paginas antes do login
 import App from './App.tsx'
 import Home from './pages/home/home.tsx'
 import Sobre from './pages/sobre/sobre.tsx'
 import Login from './pages/login/login.tsx'
 import Cadastro from './pages/cadastro/cadastro.tsx'
+
+// Paginas pós login
+import HomeLogado from './pages/usuarioLogado/homeLogado/homeLogado.tsx'
 
 // Erros
 import ErrorPage from './routes/errorPage.tsx'
@@ -49,6 +52,10 @@ const router = createBrowserRouter([
         element: <Cadastro />,
       },
     ]
+  },
+  {
+    path: "/homeLogado",
+    element: <HomeLogado />,
   },
 ]);
   

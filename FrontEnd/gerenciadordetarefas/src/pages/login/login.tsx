@@ -1,9 +1,28 @@
-function Login() {
+import "./login.css";
 
-    return (
-      <h1>Login</h1>
-      
-    );
-  }
-  
-  export default Login
+function Login () {
+
+  return (
+    <div>
+      <form>
+        <h1>Acesse o sistema</h1>
+        <div>
+          <input type="text" placeholder="E-mail" />
+        </div>
+
+        <div>
+          <input type="password" placeholder="Senha" />
+        </div>
+
+        <button type="submit">Login</button>
+        <div>
+          <p>
+            Não tem uma conta? <a href="/cadastro">Registrar-se</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default Login;

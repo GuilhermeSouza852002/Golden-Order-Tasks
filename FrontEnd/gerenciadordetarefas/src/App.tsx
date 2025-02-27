@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
     <Navbar />
-    <h1>Pagina base inicial</h1>
+    {/* <h1>Pagina base inicial</h1> */}
     <Outlet />    {/*Utilizado para reutilizar estruturas das rotas em outras paginas*/}
     </div>
   );
